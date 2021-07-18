@@ -1,7 +1,7 @@
 interface ILoan {
     id: number;
-    title: string;
-    body: string;
+    company: string;
+    amount: number;
 }
   
 type LoanState = {
@@ -17,8 +17,8 @@ type DispatchType = (args: LoanAction) => LoanAction;
 
 interface IBudget {
     id: number;
-    title: string;
-    body: string;
+    company: string;
+    budget: number;
 }
   
 type BudgetState = {
@@ -34,8 +34,9 @@ type DispatchType = (args: BudgetAction) => BudgetAction;
 
 interface ICollateral {
     id: number;
-    title: string;
-    body: string;
+    company: string;
+    asset: string;
+    worth: number;
 }
   
 type CollateralState = {
