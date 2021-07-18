@@ -13,7 +13,7 @@ type LoanAction = {
     loan: ILoan;
 };
   
-type DispatchType = (args: LoanAction) => LoanAction;
+type DispatchLoan = (args: LoanAction) => LoanAction;
 
 interface IBudget {
     id: number;
@@ -30,7 +30,7 @@ type BudgetAction = {
     budget: IBudget;
 };
   
-type DispatchType = (args: BudgetAction) => BudgetAction;
+type DispatchBudget = (args: BudgetAction) => BudgetAction;
 
 interface ICollateral {
     id: number;
@@ -48,4 +48,4 @@ type CollateralAction = {
     collateral: ICollateral;
 };
   
-type DispatchType = (args: CollateralAction) => CollateralAction;
+type DispatchCollateral = (args: CollateralAction) => CollateralAction;
