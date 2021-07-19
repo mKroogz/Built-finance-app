@@ -21,6 +21,7 @@ const budgets = (
         company: action.budget.company,
         budget: action.budget.budget,
       }
+      console.log("I am running")
       return {
         ...state,
         budgets: state.budgets.concat(newBudget),
