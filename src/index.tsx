@@ -5,16 +5,16 @@ import { Provider } from "react-redux"
 import thunk from "redux-thunk"
 
 import './index.css';
-import App from './App';
+import Built from './components/Built';
 import reducer from "./store/rootReducer"
 
 const store: Store<any> = createStore(reducer, applyMiddleware(thunk))
-console.log(store.getState())
+
 
 const rootElement = document.getElementById("root")
 render(
   <Provider store={store}>
-    <App />
+    <Built />
   </Provider>,
   rootElement
 )
